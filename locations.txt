@@ -1,0 +1,61 @@
+12
+01 Aravali(Block 2)
+workingHours(08:00AM-01:00PM : 02:00PM-06:00PM)
+purpose(it should be the general purpose for visiting that location)
+true
+contactDetails(contact_number email_address website_link)(if any of them is not present then write null but don't leave it vacant)
+02 Karavali(Block 1)
+workingHours(08:00AM-01:00PM : 02:00PM-06:00PM)
+purpose(it should be the general purpose for visiting that location)
+true
+contactDetails(contact_number email_address website_link)(if any of them is not present then write null but don't leave it vacant)
+03 Sapthagiri(Block 7)
+workingHours(08:00AM-01:00PM : 02:00PM-06:00PM)
+purpose(it should be the general purpose for visiting that location)
+true
+contactDetails(contact_number email_address website_link)(if any of them is not present then write null but don't leave it vacant)
+04 Nescafe
+workingHours(08:00AM-01:00PM : 02:00PM-06:00PM)
+purpose(it should be the general purpose for visiting that location)
+true
+contactDetails(contact_number email_address website_link)(if any of them is not present then write null but don't leave it vacant)
+05 Chaitanya(Mega Mess)
+workingHours(08:00AM-01:00PM : 02:00PM-06:00PM)
+purpose(it should be the general purpose for visiting that location)
+true
+contactDetails(contact_number email_address website_link)(if any of them is not present then write null but don't leave it vacant)
+06 Trishul(Block 8)
+workingHours(08:00AM-01:00PM : 02:00PM-06:00PM)
+purpose(it should be the general purpose for visiting that location)
+true
+contactDetails(contact_number email_address website_link)(if any of them is not present then write null but don't leave it vacant)
+07 Pushagiri(M-tech Block)
+workingHours(08:00AM-01:00PM : 02:00PM-06:00PM)
+purpose(it should be the general purpose for visiting that location)
+true
+contactDetails(contact_number email_address website_link)(if any of them is not present then write null but don't leave it vacant)
+08 Main Building
+workingHours(08:00AM-01:00PM : 02:00PM-06:00PM)
+purpose(it should be the general purpose for visiting that location)
+true
+contactDetails(contact_number email_address website_link)(if any of them is not present then write null but don't leave it vacant)
+09 LHC A
+workingHours(08:00AM-01:00PM : 02:00PM-06:00PM)
+purpose(it should be the general purpose for visiting that location)
+true
+contactDetails(contact_number email_address website_link)(if any of them is not present then write null but don't leave it vacant)
+10 LHC C
+workingHours(08:00AM-01:00PM : 02:00PM-06:00PM)
+purpose(it should be the general purpose for visiting that location)
+true
+contactDetails(contact_number email_address website_link)(if any of them is not present then write null but don't leave it vacant)
+11 Mechanical Department
+workingHours(08:00AM-01:00PM : 02:00PM-06:00PM)
+purpose(it should be the general purpose for visiting that location)
+true
+contactDetails(contact_number email_address website_link)(if any of them is not present then write null but don't leave it vacant)
+12 Chemical Department
+workingHours(08:00AM-01:00PM : 02:00PM-06:00PM)
+purpose(it should be the general purpose for visiting that location)
+true
+contactDetails(contact_number email_address website_link)(if any of them is not present then write null but don't leave it vacant)
