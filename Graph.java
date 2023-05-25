@@ -28,20 +28,18 @@ public class Graph {
         }
     }
 
-    public void insertEdge(int source, int destination, int distance){
-        Node src = new Node(source);
-        Node dest = new Node(destination);
-        graph[src.id].add(new Edges(distance,src,dest));
+    public void insertEdge(Edges edge){
+        graph[edge.sourceId].add(new Edges(edge));
     }
     public void shortest_path(String curr, String dest){
         System.out.println(curr+" "+dest);
     }
 
-    public void dijkstrasAlgo(int src,  int destination, int V) {
+    public void dijkstrasAlgo(Vehicle mode,int src,  int destination, int V) {
         PriorityQueue<Pair> priorityQueue = new PriorityQueue<>();
         int[] dist = new int[V];
         boolean[] visited = new boolean[V];
-        ArrayList<ArrayList<Integer>> intermediaryNodes = new ArrayList<>();
+        ArrayList<Edges> intermediaryNodes = new ArrayList<>();
         Arrays.fill(dist, Integer.MAX_VALUE);
         dist[src] = 0;
         priorityQueue.add(new Pair(src, 0));
@@ -50,15 +48,17 @@ public class Graph {
             if (!visited[curr.node]) {
                 visited[curr.node] = true;
                 for (Edges e : graph[curr.node]) {
-                    Node u = e.source;
-                    Node v = e.destination;
-                    if (dist[u.id] + e.distance < dist[v.id]) {
-                        dist[v.id] = dist[u.id] + e.distance;
-                        ArrayList<Integer> temp = new ArrayList<>();
-                        temp.add(u.id);
-                        temp.add(v.id);
-                        intermediaryNodes.add(temp);
-                        priorityQueue.add(new Pair(v.id, dist[v.id]));
+                    boolean  isThisWayAvailable = false;
+                    for(Vehicle vv : e.allowedVehicles){
+                        if(vv.compareTo(mode)==0)  isThisWayAvailable = true;
+                    }
+                    if(!isThisWayAvailable) continue;
+                    int u = e.sourceId;
+                    int v = e.destinationId;
+                    if (dist[u] + e.distance < dist[v]) {
+                        dist[v] = dist[u] + e.distance;
+                        intermediaryNodes.add(e);
+                        priorityQueue.add(new Pair(v, dist[v]));
                     }
                 }
             }
@@ -70,9 +70,9 @@ public class Graph {
         int current = destination;
         while (current != src) {
             pathStack.push(current);
-            for (ArrayList<Integer> nodes : intermediaryNodes) {
-                if (nodes.get(1) == current) {
-                    current = nodes.get(0);
+            for(Edges edge : intermediaryNodes){
+                if(edge.destinationId==current) {
+                    current = edge.sourceId;
                     break;
                 }
             }
