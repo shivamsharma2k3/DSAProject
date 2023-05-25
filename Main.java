@@ -29,37 +29,59 @@ public class Main {
             intermediateLocations[i] = sc.nextLine();
         }
         n+=2;
+        System.out.println("Enter the mode of transportation{WALKING(0), BICYCLES(1), MOTORCARS(2)}: ");
+        int m = sc.nextInt();
+        Vehicle mode;
+        if(m==0) mode = Vehicle.WALKING;
+        else if(m==1) mode = Vehicle.BICYCLES;
+        else mode = Vehicle.MOTORCARS;
 //         applying dijkstra's algo for all the destination;
         for(int i = 1;i<n;i++){
-            System.out.println(intermediateLocations[i-1]+"  "+intermediateLocations[i]);
-            graph.dijkstrasAlgo(Integer.parseInt(intermediateLocations[i-1]), Integer.parseInt(intermediateLocations[i]), 34);
+            System.out.println(intermediateLocations[i-1]+"  "+intermediateLocations[i]+"  "+mode);
+            graph.dijkstrasAlgo(mode,Integer.parseInt(intermediateLocations[i-1]), Integer.parseInt(intermediateLocations[i]), 34);
 //            graph.shortest_path(intermediateLocations[i-1],intermediateLocations[i]);
         }
     }
     public static Node[] locationInput() throws FileNotFoundException {
-        String data = "", locationName = "", workingHour = "", purpose= "", contactDetails = "";
-        boolean isVisitorsAllowed = true;
-        System.out.println("This are some of the locations in NITK");
-        File myObj = new File("src/locations.txt");
-        Scanner myReader = new Scanner(myObj);
-        if(myReader.hasNextLine()) data = myReader.nextLine();
-        int n = Integer.parseInt(data);
-        Node[] nodes = new Node[n];
-        int i = 0;
-        while (myReader.hasNextLine()) {
-            data = myReader.nextLine();
-            if(myReader.hasNextLine()) workingHour = myReader.nextLine();
-            if(myReader.hasNextLine()) purpose = myReader.nextLine();
-            if(myReader.hasNextLine()) isVisitorsAllowed = Boolean.parseBoolean(myReader.nextLine());
-            if(myReader.hasNextLine()) contactDetails = myReader.nextLine();
-            nodes[i] = new Node(Integer.parseInt(data.substring(0,2)),data.substring(3),workingHour,purpose,isVisitorsAllowed,contactDetails);
-            i++;
+        String csvFile = "nodesResponse.csv";
+        String line;
+        String csvSplitBy = ",";
+        int n ;
+        Node[] nodes = new Node[0];
+
+        ArrayList<Edges> nodesList = new ArrayList<>();
+        try (BufferedReader br = new BufferedReader(new FileReader(csvFile))) {
+            // Skip the header row
+            n = Integer.parseInt(br.readLine());
+            br.readLine();
+            nodes = new Node[n];
+            int i = 0;
+            while ((line = br.readLine()) != null) {
+                String[] data = line.split(csvSplitBy);
+                String locationName = "", workingHour = "", purpose= "", contactDetails = "",isVisitorsAllowed;
+                int id;
+                id = Integer.parseInt(data[1].substring(0,2));
+                locationName = data[1].substring(3);
+                workingHour = data[2];
+                purpose = data[3];
+                isVisitorsAllowed = data[4];
+                contactDetails = "Contact Number: "+data[5]+"\nEmail Address: "+data[6]+"\nWebsite: "+data[7];
+                nodes[i] = new Node(id,locationName,workingHour,purpose,isVisitorsAllowed,contactDetails);
+                i++;
+            }
+            br.close();
+        } catch (IOException e) {
+            e.printStackTrace();
+            System.out.println("Error");
         }
-        myReader.close();
+        System.out.println("This are some of the locations in NITK");
+        for (Node node: nodes) {
+            System.out.println(node.toString());
+        }
         return nodes;
     }
     public static void dataInput() throws FileNotFoundException {
-        String csvFile = "src/edgesResponse.csv";
+        String csvFile = "edgesResponse.csv";
         String line;
         String csvSplitBy = ",";
 
@@ -77,36 +99,18 @@ public class Main {
                 String instructions = data[3];
                 int sourceNode = Integer.parseInt(""+data[4].charAt(0)+data[4].charAt(1));
                 int destinationNode = Integer.parseInt(""+data[5].charAt(0)+data[5].charAt(1));
-
-                Node source = new Node(sourceNode);
-                Node destination = new Node(destinationNode);
-
-                Edges edge = new Edges(distance, source, destination);
-
-                // Set allowed vehicles
-                for (String vehicle : allowedVehiclesArray) {
-                    switch (vehicle) {
-                        case "WALKING":
-                            edge.getAllowedVehicles().add(Vehicle.WALKING);
-                            break;
-                        case "BICYCLES":
-                            edge.getAllowedVehicles().add(Vehicle.BICYCLES);
-                            break;
-                        case "MOTORCARS":
-                            edge.getAllowedVehicles().add(Vehicle.MOTORCARS);
-                            break;
-                    }
-                }
-
-                // Set instructions and landmarks if available
-                edge.setInstructions(instructions);
+                String landmarks;
+                Edges leftEdge = new Edges(distance,sourceNode,destinationNode,allowedVehiclesArray,instructions);
+                Edges rightEdge = new Edges(distance,destinationNode,sourceNode,allowedVehiclesArray,instructions);
                 if (data.length >= 6) {
-                    String landmarks = data[5];
-                    edge.setLandmarks(landmarks);
+                    landmarks = data[5];
+                    leftEdge.setLandmarks(landmarks);
+                    rightEdge.setLandmarks(landmarks);
                 }
-
-                graph.insertEdge(sourceNode, destinationNode, distance);
-                edgesList.add(edge);
+                graph.insertEdge(leftEdge);
+                graph.insertEdge(rightEdge);
+                edgesList.add(leftEdge);
+                edgesList.add(rightEdge);
             }
 
             // Print the edges

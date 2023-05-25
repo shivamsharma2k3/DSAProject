@@ -2,20 +2,32 @@ import java.util.ArrayList;
 
 class Edges {
     int distance;
-    Node source,destination;
+    int sourceId, destinationId;
     ArrayList<Vehicle> allowedVehicles;
     String instructions;
     String landmarks;
 
-    public Edges(int distance, Node source, Node destination) {
+    Edges(int distance,int sourceId, int destinationId,String[] allowedVehicle,String instructions){
         this.distance = distance;
-        this.source = source;
-        this.destination = destination;
+        this.sourceId = sourceId;
+        this.destinationId = destinationId;
         this.allowedVehicles = new ArrayList<>();
-        allowedVehicles.add(Vehicle.WALKING);
-        allowedVehicles.add(Vehicle.BICYCLES);
-        allowedVehicles.add(Vehicle.MOTORCARS);
+        for(String txt : allowedVehicle){
+            if(txt.compareTo("Walking")==0) allowedVehicles.add(Vehicle.WALKING);
+            else if(txt.compareTo("Bicycle")==0) allowedVehicles.add(Vehicle.BICYCLES);
+            else allowedVehicles.add(Vehicle.MOTORCARS);
+        }
         this.landmarks = "none";
+        this.instructions = instructions;
+    }
+    Edges(Edges edge){
+        this.distance = edge.distance;
+        this.sourceId = edge.sourceId;
+        this.destinationId = edge.destinationId;
+        this.allowedVehicles = new ArrayList<>();
+        this.allowedVehicles.addAll(edge.allowedVehicles);
+        this.landmarks = edge.landmarks;
+        this.instructions = edge.instructions;
     }
 
     public double getDistance() {
@@ -26,21 +38,9 @@ class Edges {
         this.distance = distance;
     }
 
-    public Node getSource() {
-        return source;
-    }
 
-    public void setSource(Node source) {
-        this.source = source;
-    }
 
-    public Node getDestination() {
-        return destination;
-    }
 
-    public void setDestination(Node destination) {
-        this.destination = destination;
-    }
 
     public ArrayList<Vehicle> getAllowedVehicles() {
         return allowedVehicles;
@@ -70,8 +70,8 @@ class Edges {
     public String toString() {
         return "Edges{" +
                 "distance=" + distance +
-                ", source=" + source +
-                ", destination=" + destination +
+                ", source=" + sourceId +
+                ", destination=" + destinationId +
                 ", allowedVehicles=" + allowedVehicles +
                 ", instructions='" + instructions + '\'' +
                 ", landmarks='" + landmarks + '\'' +
