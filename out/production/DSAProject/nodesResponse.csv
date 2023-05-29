@@ -1,4 +1,4 @@
-25
+27
 Timestamp,ID,Working Hours(08:00AM-01:00PM : 02:00PM-06:00PM),purpose,Visitor Allowed,Contact Number,Email Address,Website Link
 5/13/2023 15:27:38,01 Aravalli(Block-2),All Time,Student Resident,FALSE,7005107535,azhoni@nitk.edu.in,https://hostels.nitk.edu.in/
 5/13/2023 15:28:49,02 ADKE circle(Amul),08:00AM- 07:00PM,Food,TRUE,null,null,null
@@ -7,16 +7,16 @@ Timestamp,ID,Working Hours(08:00AM-01:00PM : 02:00PM-06:00PM),purpose,Visitor Al
 5/13/2023 18:50:46,05 Residential Area Entrance,All Time,travel,TRUE,null,null,null
 5/13/2023 18:54:41,06 NITK School,07:00AM - 02:00PM,education,FALSE,08242474850,nitkschool45296@gmail.com,ems.nitk.ac.in
 5/13/2023 18:55:13,07 Underpass Tunnel,All Time,travel,TRUE,null,null,null
-5/13/2023 18:58:57,08 Main Gate,All TIme,Travel,TRUE,8242473027,rnath@nitk.ac.in,null
+5/13/2023 18:58:57,08 West Campus Main Gate,All TIme,Travel,TRUE,8242473027,rnath@nitk.ac.in,null
 5/13/2023 19:02:00,09 Civil Department,09:00AM - 05:00PM,education,FALSE,08242474051,subhashyaragal@nitk.edu.in,https://civil.nitk.ac.in/
 5/13/2023 19:04:43,10 Mining Department,09:00AM - 05:00PM,education,FALSE,08242473051,mininghod@nitk.ac.in,https://mining.nitk.ac.in/
 5/16/2023 19:45:10,11 Main Building,09:00AM-05:00PM,Administrative,TRUE,8242474000,registrar@nitk.ac.in,nit.ac.in
 5/16/2023 19:43:31,12 Pavilion,All Time,Entertainment,TRUE,null,null,null
 5/16/2023 19:47:28,13 E-Library,08:00AM-11:00PM,education,FALSE,8242473063,library@nitk.edu.in,https://library.nitk.ac.in/
-5/16/2023 19:48:06,14 LHC-A,09:00AM-04:00PM,educatiion,FALSE,null,null,null
+5/16/2023 19:48:06,14 LHC-A,09:00AM-04:00PM,education,FALSE,null,null,null
 5/16/2023 19:50:06,15 Food Court/Science Block/CIDS/CISF,07:00-10:00PM,food,TRUE,9880409579,null,null
-5/16/2023 19:55:57,16 SBI/ATM//Cooperative Scoiety,All Time,cash/money,TRUE,8026599990,null,www.sbi.co.in
-5/16/2023 19:58:11,17 SJA(Silver Jubilee Auditorium),Ocassionally,Event/Entertainment,FALSE,null,null,null
+5/16/2023 19:55:57,16 SBI/ATM//Cooperative Society,All Time,cash/money,TRUE,8026599990,null,www.sbi.co.in
+5/16/2023 19:58:11,17 SJA(Silver Jubilee Auditorium),Occasionally,Event/Entertainment,FALSE,null,null,null
 5/16/2023 19:59:35,18 Vindhya (Block-3),06:00AM-11:00PM,student resident,FALSE,9557523757,mandip.singh@nitk.edu.in,https://hostels.nitk.edu.in/
 5/18/2023 10:18:54,19 Chaitanya (Mega Mess),07:00AM-10:00PM,food,TRUE,null,null,null
 5/18/2023 10:19:41,20 Upcoming Hostels Juniors Hostels,null,student resident,FALSE,null,null,null
@@ -25,3 +25,5 @@ Timestamp,ID,Working Hours(08:00AM-01:00PM : 02:00PM-06:00PM),purpose,Visitor Al
 5/18/2023 10:24:22,23 LHC-C,08:00AM-05:00PM,education,FALSE,null,null,null
 5/18/2023 10:25:51,24 IT and EEE Department,09:00AM-05:00PM,education,FALSE,8242474056, hodit@nitk.edu.in,https://infotech.nitk.ac.in/
 5/18/2023 10:28:04,25 Sapthagiri(Hostel Office),09:00AM-03:00PM,Hostel/Office,TRUE,9964279510,dr.manoj@nitk.edu.in,https://www.nitk.ac.in/hostel_wardens
+5/18/2023 10:28:04,26 East Campus Main Gate,All TIme,Travel,TRUE,8242473027,rnath@nitk.ac.in,null
+5/18/2023 10:28:04,27 Gate-2 near LHC-C,06:00AM-06:00PM SUNDAY AND SATURDAY CLOSED,travel,TRUE,null,null,null
