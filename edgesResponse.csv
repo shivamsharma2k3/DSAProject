@@ -1,35 +1,40 @@
 Timestamp,Distance,Allowed Vehicles,Instructions,Source Node,Destination Node
-5/12/2023 14:52:53,210,Walking Bicycle Motorcycle,go straight  ,01 Aravalli(Block-2),02 ADKE circle(Amul)
-5/12/2023 14:54:59,86,Walking Bicycle Motorcycle,"go straight and left",01 Aravalli(Block-2),18 Vindhya (Block-3)
-5/19/2023 14:40:39,160,Walking Bicycle Motorcycle,go straight and turn left,01 Aravalli(Block-2),25 Sapthagiri(Hostel Office)
-5/12/2023 14:57:37,300,Walking Bicycle Motorcycle,go straight  via adke circle,02 ADKE circle(Amul),03 SAC/Basket Ball Court
-5/12/2023 14:59:35,220,Walking Bicycle Motorcycle,via adke circle turn left ,02 ADKE circle(Amul),17 SJA(Silver Jubilee Auditorium)
-5/12/2023 15:09:43,300,Walking Bicycle Motorcycle,head northeast turn left,03 SAC/Basket Ball Court,04 Nandini/ Cooperative Society
-5/19/2023 13:54:37,784,Walking Bicycle Motorcycle,go straight towards north,04 Nandini/ Cooperative Society,05 Residential Area Entrance
-5/20/2023 13:55:46,260,Walking Bicycle Motorcycle,Straight and no turns,04 Nandini/ Cooperative Society,09 Girls Hostel/Civil Department
-5/20/2023 14:01:49,260,Walking Bicycle Motorcycle,Straight and no turns,05 Residential Area Entrance,06 NITK School
-5/20/2023 14:04:19,170,Walking Bicycle Motorcycle,Straight and no turns,06 NITK School,07 Underpass Tunnel
-5/20/2023 14:04:43,170,Walking Bicycle Motorcycle,Straight and no turns,06 NITK School,07 Underpass Tunnel
-5/20/2023 14:05:46,140,Walking Bicycle Motorcycle,Straight and no turns ,06 NITK School,09 Girls Hostel/Civil Department
-5/19/2023 13:58:56,267,Walking Bicycle Motorcycle,go straight towards north ,07 Underpass Tunnel,08 Main Gate
-5/19/2023 14:00:37,500,Walking,cross  NH and turn left ,08 Main Gate,24 IT and EEE Department
-5/20/2023 14:12:19,160,Walking,You have to cross national highway,08 Main Gate,09 Girls Hostel/Civil Department
-5/19/2023 14:02:12,158,Walking Bicycle Motorcycle,go straight towards main building turn left then right ,09 Girls Hostel/Civil Department,10 Mining Department
-5/12/2023 15:17:12,250,Walking Bicycle Motorcycle,head east turn left turn right ,10 Mining Department,11 Main Building
-5/12/2023 15:19:05,210,Walking Bicycle Motorcycle,head east turn left turn right,10 Mining Department,12 Pavilion
-5/19/2023 14:03:26,67,Walking Bicycle Motorcycle,go straight ,11 Main Building,22 Old Books Library
-5/19/2023 14:05:05,125,Walking Bicycle Motorcycle,go straight turn left,12 Pavilion,13 E-Library
-5/19/2023 14:06:28,204,Walking Bicycle Motorcycle,go straight,13 E-Library,14 LHC-A
-5/20/2023 14:22:28,100,Walking Bicycle Motorcycle,You will find CIDS and science block,13 E-Library,15 Food Court/Science Block/CIDS/CISF
-5/19/2023 14:10:16,88,Walking Bicycle Motorcycle,go straight,14 LHC-A,16 SBI/ATM//Cooperative Scoiety
-5/19/2023 14:12:36,105,Walking Bicycle Motorcycle,go straight towards east,14 LHC-A,22 Old Books Library
-5/12/2023 15:01:16,170,Walking Bicycle Motorcycle,head west turn right ,15 Food Court/Science Block/CIDS/CISF,17 SJA(Silver Jubilee Auditorium)
-5/19/2023 14:17:40,194,Walking Bicycle Motorcycle,go straight towards west ,15 Food Court/Science Block/CIDS/CISF,16 SBI/ATM//Cooperative Scoiety
-5/19/2023 14:22:24,187,Walking Bicycle Motorcycle,go straight towards north,16 SBI/ATM//Cooperative Scoiety,20 Upcoming Hostels Juniors Hostels
-5/19/2023 14:26:33,74,Walking Bicycle Motorcycle,go straight towards west ,16 SBI/ATM//Cooperative Scoiety,21 Gate-2 near Post Office
-5/20/2023 14:23:32,200,Walking,It's short it which goes through SJA,17 SJA(Silver Jubilee Auditorium),25 Sapthagiri(Hostel Office)
-5/19/2023 14:35:49,115,Walking Bicycle Motorcycle,go straight turn left turn right ,18 Vindhya (Block-3),19 Chaitanya (Mega Mess)
-5/19/2023 14:43:18,193,Walking Bicycle Motorcycle,turn left turn right ,19 Chaitanya (Mega Mess),25 Sapthagiri(Hostel Office)
-5/19/2023 14:49:19,197,Walking Bicycle Motorcycle, go straight towards west ,19 Chaitanya (Mega Mess),20 Upcoming Hostels Juniors Hostels
-5/19/2023 14:37:28,212,Walking Bicycle Motorcycle,go straight towards west and turn left turn right,21 Gate-2 near Post Office,23 LHC-C
-5/19/2023 14:38:31,85,Walking Bicycle Motorcycle,straight and turn left,23 LHC-C,24 IT and EEE Department
+5/12/2023 14:52:53,210m,Walking Bicycle Motorcycle,go straight  ,01 Aravalli(Block-2),02 ADKE circle(Amul)
+5/12/2023 14:54:59,120m,Walking Bicycle Motorcycle,"go straight and left",01 Aravalli(Block-2),18 Vindhya (Block-3)
+5/19/2023 14:40:39,120m,Walking Bicycle Motorcycle,go straight and turn left,01 Aravalli(Block-2),25 Sapthagiri(Hostel Office)
+5/12/2023 14:57:37,170m,Walking Bicycle Motorcycle,go straight  via ADKE circle,02 ADKE circle(Amul),03 SAC/Basket Ball Court
+5/12/2023 14:59:35,110m,Walking Bicycle Motorcycle,via ADKE circle turn left ,02 ADKE circle(Amul),17 SJA(Silver Jubilee Auditorium)
+5/12/2023 15:09:43,200m,Walking Bicycle Motorcycle,head northeast turn left,03 SAC/Basket Ball Court,04 Nandini/ Cooperative Society
+5/19/2023 13:54:37,140m,Walking Bicycle Motorcycle,go straight towards north,04 Nandini/ Cooperative Society,05 Residential Area Entrance
+5/20/2023 13:55:46,260m,Walking Bicycle Motorcycle,Straight and no turns,04 Nandini/ Cooperative Society,09 Girls Hostel/Civil Department
+5/20/2023 14:01:49,260m,Walking Bicycle Motorcycle,Straight and no turns,05 Residential Area Entrance,06 NITK School
+5/20/2023 14:04:19,190m ,Walking Bicycle Motorcycle,Straight and no turns,06 NITK School,07 Underpass Tunnel
+5/20/2023 14:05:46,140m,Walking Bicycle Motorcycle,Straight and no turns ,06 NITK School,09 Girls Hostel/Civil Department
+5/19/2023 13:58:56,170m,Walking Bicycle Motorcycle,go straight towards north ,07 Underpass Tunnel,08 Main Gate
+5/19/2023 14:00:37,150m,Walking Bicycle Motorcycle,cross NH and turn left ,08 West Campus Main Gate,24 IT and EEE Department
+5/19/2023 14:00:37,100m,Walking,cross NH carefully,08 West Campus Main Gate,26 East Campus Main Gate
+5/20/2023 14:12:19,90m,Walking,You have to cross national highway,26 East Campus Main Gate,09 Girls Hostel/Civil Department
+5/19/2023 14:02:12,80m,Walking Bicycle Motorcycle,go straight towards main building turn left then right ,09 Girls Hostel/Civil Department,10 Mining Department
+5/12/2023 15:17:12,90m,Walking Bicycle Motorcycle,head east turn left turn right ,10 Mining Department,11 Main Building
+5/12/2023 15:19:05,180m,Walking Bicycle Motorcycle,head east turn left turn right,10 Mining Department,12 Pavilion
+5/19/2023 14:03:26,150m,Walking Bicycle Motorcycle,go straight ,11 Main Building,22 Old Books Library
+5/19/2023 14:05:05,150m,Walking Bicycle Motorcycle,go straight turn left,12 Pavilion,13 E-Library
+5/19/2023 14:06:28,120m,Walking Bicycle Motorcycle,go straight,13 E-Library,14 LHC-A
+5/20/2023 14:22:28,80m,Walking Bicycle Motorcycle,You will find CIDS and science block,13 E-Library,15 Food Court/Science Block/CIDS/CISF
+5/19/2023 14:10:16,88m,Walking Bicycle Motorcycle,go straight,14 LHC-A,16 SBI/ATM//Cooperative Society
+5/19/2023 14:12:36,45m,Walking Bicycle Motorcycle,go straight towards east,14 LHC-A,22 Old Books Library
+5/12/2023 15:01:16,55m,Walking Bicycle Motorcycle,head west turn right ,15 Food Court/Science Block/CIDS/CISF,17 SJA(Silver Jubilee Auditorium)
+5/19/2023 14:17:40,90m,Walking Bicycle Motorcycle,go straight towards west ,15 Food Court/Science Block/CIDS/CISF,16 SBI/ATM//Cooperative Society
+5/19/2023 14:22:24,100m,Walking Bicycle Motorcycle,go straight towards north,16 SBI/ATM//Cooperative Society,20 Upcoming Hostels Juniors Hostels
+5/19/2023 14:26:33,130m,Walking Bicycle Motorcycle,go straight towards west ,16 SBI/ATM//Cooperative Society,27 Gate-2 near LHC-C
+5/19/2023 14:26:33,50m,Walking,UnderPass connecting both the campus,27 Gate-2 near LHC-C,21 Gate-2 near Post Office
+5/20/2023 14:23:32,220m,Walking,It's short it which goes through SJA,17 SJA(Silver Jubilee Auditorium),25 Sapthagiri(Hostel Office)
+5/19/2023 14:35:49,110m,Walking Bicycle Motorcycle,go straight turn left turn right ,18 Vindhya (Block-3),19 Power House for Mega Towers
+5/19/2023 14:35:49,210m,Walking Bicycle Motorcycle,go straight ,18 Vindhya (Block-3),29 Nandini/Mega Towers
+5/19/2023 14:43:18,70m,Walking Bicycle Motorcycle,turn left turn right ,19 Power House for Mega Towers,25 Sapthagiri(Hostel Office)
+5/19/2023 14:49:19,170m,Walking Bicycle Motorcycle, go straight towards west ,19 Power House for Mega Towers,20 Upcoming Hostels Juniors Hostels
+5/19/2023 14:49:19,70m,Walking, go through narrow road ,19 Power House for Mega Towers,28 Chaitanya (Mega Mess)
+5/19/2023 14:37:28,80m,Walking Bicycle Motorcycle,go straight towards west and turn left turn right,21 Gate-2 near Post Office,23 LHC-C
+5/19/2023 14:38:31,60m,Walking Bicycle Motorcycle,straight and turn left,23 LHC-C,24 IT and EEE Department
+5/19/2023 14:38:31,200m,Walking Bicycle Motorcycle,straight and turn left,20 Upcoming Hostels Juniors Hostels,29 Nandini/Mega Towers
+5/19/2023 14:38:31,120m,Walking Bicycle Motorcycle,straight and turn left,28 Chaitanya (Mega Mess),29 Nandini/Mega Towers
